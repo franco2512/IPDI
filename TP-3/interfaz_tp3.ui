@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>826</width>
+    <height>606</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#centralwidget{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(197, 138, 255, 255), stop:1 rgba(255, 255, 255, 255));}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btn_cargarImagen">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>430</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:20px;
+background-color:rgb(140,76,255);
+font: 10pt &quot;Franklin Gothic Demi&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Seleccionar Imagen</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonEliminar">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>430</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:20px;
+background-color:rgb(140,76,255);
+font: 10pt &quot;Franklin Gothic Demi&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Eliminar/Limpiar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelImagen">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>130</y>
+      <width>271</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid black;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>261</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 36pt &quot;Agency FB&quot;;
+color:black;</string>
+    </property>
+    <property name="text">
+     <string>IMAGEN ORIGINAL</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelImagen_2">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>130</y>
+      <width>271</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid black;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>30</y>
+      <width>311</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 36pt &quot;Agency FB&quot;;
+color:black;</string>
+    </property>
+    <property name="text">
+     <string>IMAGEN MODIFICADA</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonEliminar_2">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>500</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:20px;
+background-color:rgb(210,90,255);
+font: 10pt &quot;Franklin Gothic Demi&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Eliminar el filtro</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="opcCombo">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>400</y>
+      <width>201</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:20px;
+background-color:rgb(210,90,255);
+font: 10pt &quot;Franklin Gothic Demi&quot;;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Raiz Cuadrada</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Raiz Cubica</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Cuadrado</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Cubo</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Lineal a Trozos</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="btn_aplicarFiltro">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>500</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:20px;
+background-color:rgb(210,90,255);
+font: 10pt &quot;Franklin Gothic Demi&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Aplicar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonGuardar">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>500</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:20px;
+background-color:rgb(210,90,255);
+font: 10pt &quot;Franklin Gothic Demi&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Guardar</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
